@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css" />
+    <title>Bengluru Home Price prediction</title>
+  </head>
+  <body>
+    <div class="img"></div>
+    <form action="" class="form">
+      <h2>Area (square feet)</h2>
+      <input
+        type="text"
+        id="uisqft"
+        class="area floatlabel"
+        name="squareft"
+        value="1000"
+      />
+      <h2>BHK</h2>
+      <div class="switch-field">
+        <input type="radio" name="uibhk" id="radio-bhk1" />
+        <label for="radio-bhk1">1</label>
+        <input type="radio" name="uibhk" id="radio-bhk2" />
+        <label for="radio-bhk2">2</label>
+        <input type="radio" name="uibhk" id="radio-bhk3" />
+        <label for="radio-bhk3">3</label>
+        <input type="radio" name="uibhk" id="radio-bhk4" />
+        <label for="radio-bhk4">4</label>
+        <input type="radio" name="uibhk" id="radio-bhk5" />
+        <label for="radio-bhk5">5</label>
+      </div>
+      <h2>BATH</h2>
+      <div class="switch-field">
+        <input type="radio" name="uibath" id="radio-bath1" />
+        <label for="radio-bath1">1</label>
+        <input type="radio" name="uibath" id="radio-bath2" />
+        <label for="radio-bath2">2</label>
+        <input type="radio" name="uibath" id="radio-bath3" />
+        <label for="radio-bath3">3</label>
+        <input type="radio" name="uibath" id="radio-bath4" />
+        <label for="radio-bath4">4</label>
+        <input type="radio" name="uibath" id="radio-bath5" />
+        <label for="radio-bath5">5</label>
+      </div>
+      <h2>Location</h2>
+      <div>
+        <select class="location" name="" id="uiLocations">
+          <option value="" disabled="disabled" selected="selected">
+            Choose a Location
+          </option>
+          <option>Electronic City</option>
+          <option>Rajaji Nagar</option>
+        </select>
+      </div>
+      <button class="submit" onclick="estimatePriceHandler()" type="button">
+        Estimate Price
+      </button>
+      <div id="uiEstimatedPrice" class="result"><h2></h2></div>
+    </form>
+  </body>
+</html>
